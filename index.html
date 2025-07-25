@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔐 StrongPass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 StrongPass</h1>
+
+    <label for="length">Password Length:</label>
+    <input type="number" id="length" min="8" max="32" value="12" />
+
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" /> Include Uppercase</label><br />
+      <label><input type="checkbox" id="numbers" /> Include Numbers</label><br />
+      <label><input type="checkbox" id="symbols" /> Include Symbols</label><br />
+    </div>
+
+    <button onclick="generatePassword()">Generate</button>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
